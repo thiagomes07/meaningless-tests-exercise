@@ -1,0 +1,19 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos temporários
+*.tmp
+*.swp
+
+# Ignorar arquivos de ambiente
+.env
+
+# Ignorar diretórios do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos do npm
+package-lock.json
