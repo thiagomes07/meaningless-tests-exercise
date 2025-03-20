@@ -24,7 +24,15 @@ Verificar se o atendimento pode ser inativado corretamente e se um log de uso é
    - Detalhes sobre a inativação (por exemplo, a data e a razão).
 
 ## Resultado Obtido
-(Preencher após o teste)
+- **Resultado da API**: O teste executado retornou o status `200 OK`, indicando que a requisição foi processada com sucesso e o atendimento foi inativado com sucesso. O status do atendimento foi alterado de "Ativo" para "Finalizado" conforme esperado.
+  
+- **Resultado do Log**: O log gerado durante o teste foi simulado corretamente e contém as seguintes informações:
+  - Ação: "Inativação de Atendimento"
+  - ID do usuário: 1 (usuário mockado, administrador)
+  - Detalhes: "Atendimento 1 inativado."
+  - Appointment ID: 1 (atendimento correto)
+
+Além disso, o teste foi executado com sucesso sem erros, e as validações realizadas dentro do código também passaram sem falhas. O log foi criado conforme esperado e a funcionalidade de inativação foi validada com sucesso.
 
 ## Pós-condição
 - O atendimento estará inativado.
